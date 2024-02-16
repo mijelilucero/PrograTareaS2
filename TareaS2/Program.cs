@@ -1,6 +1,6 @@
-﻿Console.WriteLine("Ingrese la temperatura en grados Celsius: ");
-double celsius = Convert.ToDouble(Console.ReadLine());
+﻿Console.WriteLine("Ingrese la temperatura en grados Fahrenheit: ");
+double fahrenheit = Convert.ToDouble(Console.ReadLine());
 
-double fahrenheit = (celsius * 1.8) + 32;
+double celsius = (fahrenheit - 32) / 1.8;
 
-Console.WriteLine("La temperatura en grados Fahrenheit es de: {0}", fahrenheit);
+Console.WriteLine("La temperatura en grados Celsius es de: {0}", celsius);
