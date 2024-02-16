@@ -1,5 +1,6 @@
-﻿char caracter = '2';
-Console.WriteLine("El caracter es: "+caracter);
+﻿Console.WriteLine("Ingrese un valor entero: ");
 
-int numInt = (int)Char.GetNumericValue(caracter);
-Console.WriteLine("El caracter ingresado convertido a entero es: " + numInt);
+int numInt = Convert.ToInt32(Console.ReadLine());
+Char caracter = (Char)numInt;
+
+Console.WriteLine("El numero {0} convertido a char es: '{1}'",numInt,caracter);
