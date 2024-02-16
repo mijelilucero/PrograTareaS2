@@ -1,6 +1,9 @@
-﻿Console.WriteLine("Ingrese un valor decimal: ");
+﻿Console.WriteLine("Ingrese un valor de tipo float: ");
 
-decimal numDec=Convert.ToDecimal(Console.ReadLine());
-float numFloat=(float)numDec;
+float numFloat;
 
-Console.WriteLine("El valor decimal ingresado convertido a float es: "+numFloat);
+if (float.TryParse(Console.ReadLine(), out numFloat))
+{
+    int numInt = Convert.ToInt32(numFloat);
+    Console.WriteLine("El valor float ingresado convertido a entero es: " + numInt);
+}
