@@ -1,14 +1,14 @@
 ﻿Console.WriteLine("Ingrese un texto corto: ");
-string cadena = Console.ReadLine();
+string cadena = Console.ReadLine().ToLower();
 
-Console.WriteLine("Ingrese la palabra a buscar: ");
-string palabra = Console.ReadLine();
+int conteo = 0;
 
-if (cadena.ToLower().Contains(palabra.ToLower()))
+for (int i = 0; i < cadena.Length; i++)
 {
-    Console.WriteLine("La cadena si tiene la palabra {0}.", palabra);
+    if (cadena[i] == 'a'|| cadena[i] == 'e' || cadena[i] == 'i' || cadena[i] == 'o' || cadena[i] == 'u')
+    {
+        conteo++;
+    }
 }
-else
-{
-    Console.WriteLine("La cadena no tiene la palabra {0}.", palabra);
-}
+
+Console.WriteLine("La cantidad de vocales en la palabra es de: {0}", conteo);
