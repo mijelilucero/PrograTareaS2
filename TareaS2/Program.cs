@@ -1,9 +1,5 @@
-﻿Console.WriteLine("Ingrese un valor de tipo float: ");
+﻿char caracter = '2';
+Console.WriteLine("El caracter es: "+caracter);
 
-float numFloat;
-
-if (float.TryParse(Console.ReadLine(), out numFloat))
-{
-    int numInt = Convert.ToInt32(numFloat);
-    Console.WriteLine("El valor float ingresado convertido a entero es: " + numInt);
-}
+int numInt = (int)Char.GetNumericValue(caracter);
+Console.WriteLine("El caracter ingresado convertido a entero es: " + numInt);
