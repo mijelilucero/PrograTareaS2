@@ -1,8 +1,15 @@
-﻿Console.WriteLine("Ingrese un valor para el radio: ");
-double radio = Convert.ToDouble(Console.ReadLine());
+﻿Console.WriteLine("Ingrese el valor en X del primer punto: ");
+double x1 = Convert.ToDouble(Console.ReadLine());
 
-const double Pi = 3.14159;
+Console.WriteLine("Ingrese el valor en Y del primer punto: ");
+double y1 = Convert.ToDouble(Console.ReadLine());
 
-double volumen = (4*Pi)*(radio*radio*radio)/3;
+Console.WriteLine("Ingrese el valor en X del segundo punto: ");
+double x2 = Convert.ToDouble(Console.ReadLine());
 
-Console.WriteLine("El volumen de la esfera es de: {0}", volumen);
+Console.WriteLine("Ingrese el valor en Y del segundo punto: ");
+double y2 = Convert.ToDouble(Console.ReadLine());
+
+double distancia = Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2));
+
+Console.WriteLine("La distancia entre los dos puntos es de: {0}", distancia);
