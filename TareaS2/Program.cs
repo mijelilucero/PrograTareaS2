@@ -1,14 +1,9 @@
-﻿Console.WriteLine("Ingrese un texto corto: ");
-string cadena = Console.ReadLine().ToLower();
+﻿Console.WriteLine("Ingrese un valor para la altura: ");
+decimal h = Convert.ToDecimal(Console.ReadLine());
 
-int conteo = 0;
+Console.WriteLine("Ingrese un valor para la base: ");
+decimal b = Convert.ToDecimal(Console.ReadLine());
 
-for (int i = 0; i < cadena.Length; i++)
-{
-    if (cadena[i] == 'a'|| cadena[i] == 'e' || cadena[i] == 'i' || cadena[i] == 'o' || cadena[i] == 'u')
-    {
-        conteo++;
-    }
-}
+decimal area = (b * h) / 2;
 
-Console.WriteLine("La cantidad de vocales en la palabra es de: {0}", conteo);
+Console.WriteLine("El area del triangulo es de: {0}", area);
