@@ -1,9 +1,8 @@
-﻿Console.WriteLine("Ingrese un valor para la altura: ");
-decimal h = Convert.ToDecimal(Console.ReadLine());
+﻿Console.WriteLine("Ingrese un valor para el radio: ");
+double radio = Convert.ToDouble(Console.ReadLine());
 
-Console.WriteLine("Ingrese un valor para la base: ");
-decimal b = Convert.ToDecimal(Console.ReadLine());
+const double Pi = 3.14159;
 
-decimal area = (b * h) / 2;
+double volumen = (4*Pi)*(radio*radio*radio)/3;
 
-Console.WriteLine("El area del triangulo es de: {0}", area);
+Console.WriteLine("El volumen de la esfera es de: {0}", volumen);
